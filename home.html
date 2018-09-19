@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato%7CWork+Sans" rel="stylesheet">
+	<link href = "assets/css/reset.css" rel=stylesheet>
+	<link href= "assets/css/style.css" rel=stylesheet>
+	<script src="assets/script.js"></script>
+	
+	<script src="assets/lib/app.js"></script>
+    <script src="assets/lib/database.js"></script>
+    <script src="assets/lib/codes.js"></script>
+    <script src="assets/lib/handlebars.js"></script>
+   
+	<meta charset = "utf-8">
+
+	<title> Insport </title>
+</head>
+<header class = "header">
+	<img class = "logo" src = "assets/img/logo.png" alt= "logo">
+	<nav class = "lista">
+		<ul>
+			<li class ="navegacao"><a class = "link" href="home.html"> Home</a></li>
+			<li class ="navegacao"><a class= "link" href="info.html"> Info</a></li>
+		</ul>
+	</nav>
+</header>
+<header class = "busca">
+	<p> Busca </p> 
+</header>
+<div class = "bloco1">
+	<ul>
+		{{#each name}}
+        <li class="principal1"><a class= linkhome href="areaselecionada.html?categoria={{name}}">{{name}}</a></li>
+		{{/each}}
+    </ul>
+</div>
+<div class = "copyright">₢ Grupo 6 - 2018</div>
+
+</html>

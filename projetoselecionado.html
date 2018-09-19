@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato%7CWork+Sans" rel="stylesheet">
+	<link href = "assets/css/reset.css" rel=stylesheet>
+	<link href= "assets/css/style.css" rel=stylesheet>
+  <script src="assets/lib/app.js"></script>
+  <script src="assets/lib/database.js"></script>
+  <script src="assets/lib/codes.js"></script>
+  <script src="assets/lib/handlebars.js"></script>
+  <script src="assets/script3.js"></script>
+	<meta charset = "utf-8">
+  <title> {{name}}</title>
+</head>
+<header class = "header">
+  <img class = "logo" src = "assets/img/logo.png" alt= "logo">
+  <nav class = "lista">
+    <ul>
+      <li class ="navegacao"><a class="link" href="home.html"> Home</a></li>
+      <li class ="navegacao"><a class="link" href="info.html"> Info</a></li>
+    </ul>
+  </nav>
+</header>
+<header class = "busca">
+  <p> Busca </p> 
+</header>
+<header class = "nomeprojeto">
+	{{name}}
+</header>
+<table class="tabela">
+  <tr>
+    <th>Descrição:</th>
+    <td>{{desc}}</td>
+  </tr>
+  <tr>
+    <th>Objetivos e Habilidades:</th>
+    <td>
+      <ul>
+        {{#each objetivos}}
+        <li class = "listasubtabela">{{this}}</li>
+        {{/each}}
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>Data de entrega:</th>
+    <td>
+    	{{data}}
+    </td>
+  </tr>
+  <tr>
+    <th>Conceito/Nota do projeto:</th>
+    <td>
+    	{{nota}}
+    </td>
+  </tr>
+  <tr>
+    <th>Arquivos para download:</th>
+    <td>
+    	{{download}}
+    </td>
+  </tr>
+</table>
+<div class = "copyright">₢ Grupo 6 - 2018</div>
+</html>

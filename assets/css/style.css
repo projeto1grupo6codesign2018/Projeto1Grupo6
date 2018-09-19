@@ -1,0 +1,211 @@
+.header {
+	position: absolute;
+	padding: 10px 1%;
+	margin: 10px 1% auto;
+	border: 4px solid;
+	width: 96%;
+	height: 7%;
+	background-color: #8D001C;
+
+}
+
+.busca {
+	font-family: "Work Sans", sans-serif;
+	position: absolute;
+	left: 90%;
+	top: 5%;
+	color: white;
+}
+
+.lista {
+	position: absolute;
+	left: 20%;
+	top: 20%;
+
+	
+}
+.navegacao{
+	font-family: "Work Sans", sans-serif;
+	font-size: 25px;
+	margin: 50px;
+	display: inline;
+	letter-spacing: 0.001rem;
+
+
+}
+
+.link{
+	color: white;
+	text-decoration: none;
+}
+
+.principal1{
+	display: inline-flex;
+	font-size: 130%;
+	padding: 12% 2% 12%;
+	justify-content: center;
+	background-color: #8D001C;
+	height: 2%;
+	width: 10%;
+	color: white;
+	margin: 1%;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+
+
+}
+
+.linkhome:link, .linkhome:visited{
+	color: white;
+	text-decoration: none;	
+}
+.principal1: hover{
+	background-color: #000000;
+}
+
+.bloco1{
+	font-family: Lato, sans-serif;
+
+	padding-top: 12%;
+	top: 30%;
+	left: 35%;
+
+	
+
+}
+
+.copyright{
+	font-family: Lato, sans-serif;
+	position: absolute;
+	line-height: 10px;
+	left: 47%;
+	top: 96%;
+
+}
+	
+.titulo{
+	font-size: 1.3rem;
+	font-family: "Work Sans", sans-serif;
+	position: absolute;
+	font-weight: bold;
+	color: white;
+    background-color: #CA3D59;
+    top: 20%;
+    width: 100%;
+    height: 3%;
+    text-align: center;
+     
+}
+
+.contatos {
+	font-family: Lato;
+	position: absolute;
+   	top: 25%;
+    left: 50%;
+}
+
+.blococontatos{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+}
+
+
+.listainfo {
+	font-family: Lato, sans-serif;	
+  	padding: 10px;
+    list-style-type: disc; 
+    list-style-position: inside;
+}
+
+
+.area{
+	font-family: "Work Sans", sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	left: 18%;
+
+
+}
+
+.areaprojects{
+	position: absolute;
+	font-size: 25px;
+	top: 40%;
+	left: 50%;
+}
+
+.resultadobusca {
+	font-family: "Work Sans", sans-serif;
+	position: absolute;
+	font-size: 25px;
+	margin: 5%;
+	top: 15%;
+	left: 35%;
+}
+
+.blocoresultados{
+	font-family: Lato, sans-serif;
+	position: absolute;
+	font-size: 25px;
+	list-style-type: disc; 
+    list-style-position: inside;
+    top: 30%;
+    left: 30%;
+    color: #CA3D59;
+    margin: 5%;
+
+}
+
+.nomeprojeto{
+	font-family: "Work Sans", sans-serif;
+	font-weight: bold;
+	font-size:1.7rem;
+	position: absolute;
+	top: 15%;
+	left: 40%;
+	color: #CA3D59;
+	line-height: 1rem;
+
+}
+
+table, th, td {
+	border: 1px solid #CA3D59;
+}
+
+.tabela{
+	font-family: Lato, sans-serif;
+	font-size: 1.1rem;
+	position: absolute;
+	border: 1px solid #CA3D59;
+	top: 25%;
+	left: 25%;
+	margin: 5%;
+	
+
+}
+
+.respostastabela{
+	border: 1px solid red;
+	position: absolute;
+	top:250px;
+	left: 400px;
+	font-size: 20px;
+
+}
+.listasubtabela{
+	font-family: Lato, sans-serif;
+	font-size: 1.1rem;
+	list-style-type: disc; 
+    list-style-position: inside;
+  
+
+}
+
+.logo{
+	width: 20%;
+	height: 80%;
+
+	
+}
