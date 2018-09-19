@@ -40,21 +40,30 @@
 }
 
 .principal1{
-	display: inline-flex;
+	justify-content:center;
 	font-size: 130%;
-	padding: 12% 2% 12%;
-	justify-content: center;
-	background-color: #8D001C;
-	height: 2%;
-	width: 10%;
-	color: white;
-	margin: 1%;
-	-webkit-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-
+	background-color: #8D001C; 
+    color: white;
+    padding: 12% 2% 12%;
+    transition-duration: 0.4s;
+    margin: 5%;
 
 }
 
+.principal1:hover{
+	background-color: #000000; 
+}
+.bloco-list{
+	margin-top: 12%;
+	margin-bottom: 12%;
+	position: relative;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 50% 50% 50% 50%;
+	grid-row-gap: 2%;
+
+
+}
 .linkhome:link, .linkhome:visited{
 	color: white;
 	text-decoration: none;	
@@ -64,11 +73,12 @@
 }
 
 .bloco1{
-	font-family: Lato, sans-serif;
-
-	padding-top: 12%;
+	font-family: lato, sans-serif;
+	text-align: center;
+	padding-top: 5%;
 	top: 30%;
 	left: 35%;
+	
 
 	
 
