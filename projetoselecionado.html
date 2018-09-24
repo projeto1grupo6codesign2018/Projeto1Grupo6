@@ -10,6 +10,7 @@
   <script src="assets/lib/handlebars.js"></script>
   <script src="assets/script3.js"></script>
 	<meta charset = "utf-8">
+  <meta name = "viewport" content= "width=device-width, initial-scale=1">
   <title> {{name}}</title>
 </head>
 <header class = "header">
@@ -21,42 +22,46 @@
     </ul>
   </nav>
 </header>
-<header class = "nomeprojeto">
-	{{name}}
-</header>
-<table class="tabela">
-  <tr>
-    <th>Descrição:</th>
-    <td>{{desc}}</td>
-  </tr>
-  <tr>
-    <th>Objetivos e Habilidades:</th>
-    <td>
-      <ul>
-        {{#each objetivos}}
-        <li class = "listasubtabela">{{this}}</li>
-        {{/each}}
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Data de entrega:</th>
-    <td>
-    	{{data}}
-    </td>
-  </tr>
-  <tr>
-    <th>Conceito/Nota do projeto:</th>
-    <td>
-    	{{nota}}
-    </td>
-  </tr>
-  <tr>
-    <th>Arquivos para download:</th>
-    <td>
-    	{{download}}
-    </td>
-  </tr>
-</table>
+<div class = "divprojeto">
+  <header class = "nomeprojeto">
+  	{{name}}
+  </header>
+</div>
+<div class = "espacotabela">
+  <table class="tabela">
+    <tr>
+      <th>Descrição:</th>
+      <td>{{desc}}</td>
+    </tr>
+    <tr>
+      <th>Objetivos e Habilidades:</th>
+      <td>
+        <ul>
+          {{#each objetivos}}
+          <li class = "listasubtabela">{{this}}</li>
+          {{/each}}
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Data de entrega:</th>
+      <td>
+      	{{data}}
+      </td>
+    </tr>
+    <tr>
+      <th>Conceito/Nota do projeto:</th>
+      <td>
+      	{{nota}}
+      </td>
+    </tr>
+    <tr>
+      <th>Arquivos para download:</th>
+      <td>
+      	{{download}}
+      </td>
+    </tr>
+  </table>
+</div>
 <div class = "copyright">₢ Grupo 6 - 2018</div>
 </html>

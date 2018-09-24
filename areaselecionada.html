@@ -11,6 +11,7 @@
 	<link href = "assets/css/reset.css" rel=stylesheet>
 	<link href= "assets/css/style.css" rel=stylesheet>
 	<meta charset = "utf-8">
+	<meta name = "viewport" content= "width=device-width, initial-scale=1">
 
 	<title> {{name}}</title>
 </head>
@@ -29,7 +30,7 @@
 <div class = "areaprojects">
 	<ul>
 		{{#each projetoslistados}}
-		<li class = listainfo><a href="projetoselecionado.html?categoria={{area}}&projeto={{nome}}">{{nome}}</a></li>
+		<li class = listainfo><a class = "linkarea" href="projetoselecionado.html?categoria={{area}}&projeto={{nome}}">{{nome}}</a></li>
 		{{/each}}
 	</ul>
 </div>
