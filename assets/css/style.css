@@ -1,7 +1,6 @@
 .header {
 	position: absolute;
-	padding: 10px 1%;
-	margin: 10px 1% auto;
+	padding: 1rem;
 	border: 4px solid;
 	width: 96%;
 	height: 7%;
@@ -9,26 +8,20 @@
 
 }
 
-.busca {
-	font-family: "Work Sans", sans-serif;
-	position: absolute;
-	left: 90%;
-	top: 5%;
-	color: white;
-}
 
 .lista {
 	position: absolute;
-	left: 20%;
-	top: 30%;
+	left: 45%;
+	top: 35%;
 
 	
 }
 .navegacao{
 	font-family: "Work Sans", sans-serif;
 	font-size: 25px;
-	margin: 50px;
+	margin: 1px;
 	display: inline;
+	padding: 15px;
 	letter-spacing: 0.001rem;
 
 
@@ -54,12 +47,12 @@
 	background-color: #000000; 
 }
 .bloco-list{
-	margin-top: 12%;
-	margin-bottom: 12%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	position: relative;
 	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 50% 50% 50% 50%;
+	grid-template-columns: 82% 82%;
+	grid-template-rows: 33% 33% 33% 33%;
 	grid-row-gap: 2%;
 
 
@@ -75,9 +68,10 @@
 .bloco1{
 	font-family: lato, sans-serif;
 	text-align: center;
-	padding-top: 5%;
-	top: 30%;
-	left: 35%;
+	top: 25%;
+	justify-content: center;	
+	display: flex;
+	position: absolute;	
 	
 
 	
@@ -88,36 +82,43 @@
 	font-family: Lato, sans-serif;
 	position: absolute;
 	line-height: 10px;
-	left: 47%;
-	top: 96%;
+	left: 35%;
+	bottom: 0%;
 
 }
 	
 .titulo{
-	font-size: 1.3rem;
+    font-size: 1.25rem;
 	font-family: "Work Sans", sans-serif;
 	position: absolute;
 	font-weight: bold;
 	color: white;
-    background-color: #CA3D59;
-    top: 20%;
-    width: 100%;
-    height: 3%;
+    background-color: #8D001C;
+    top: 15%;
+    width: 107%;
+    height: 12%;
     text-align: center;
      
 }
+.projeto{
+	text-align: center;
+	padding-top: 1.8%;
+}
+
 
 .contatos {
 	font-family: Lato;
 	position: absolute;
-   	top: 25%;
-    left: 50%;
+	text-align: center;
+   	top: 30%;
+    left: 40%;
 }
 
 .blococontatos{
 	position: absolute;
-	top: 30%;
-	left: 40%;
+	justify-content: center;
+	top: 40%;
+	left: 25%;
 }
 
 
@@ -129,21 +130,31 @@
 }
 
 
+
 .area{
 	font-family: "Work Sans", sans-serif;
-	font-size: 25px;
+	font-size: 100%;
 	position: absolute;
 	top: 50%;
-	left: 18%;
+	left: 1%;
+	display: inline-block;
+	text-align: center;
+	padding: 3% 10% 3%;
+	color: #000000;
+	margin: 5%;
 
+}
+
+.linkarea:link, .linkarea:visited {
+	color: #8D001C;
 
 }
 
 .areaprojects{
 	position: absolute;
-	font-size: 25px;
+	font-size: 100%;
 	top: 40%;
-	left: 50%;
+	left: 60%;
 }
 
 .resultadobusca {
@@ -169,15 +180,26 @@
 }
 
 .nomeprojeto{
+	display: flex;
+	justify-content: center;
 	font-family: "Work Sans", sans-serif;
 	font-weight: bold;
-	font-size:1.7rem;
+	font-size: 100%;
 	position: absolute;
-	top: 15%;
-	left: 40%;
+	top: 18%;
+	left: 50%;
+	transform: translate(-40%, -50%);
 	color: #CA3D59;
 	line-height: 1rem;
 
+}
+.divprojeto {
+	align-content: center;
+	text-align: center;
+	
+}
+.espacotabela{
+	align-content: center;
 }
 
 table, th, td {
@@ -190,7 +212,8 @@ table, th, td {
 	position: absolute;
 	border: 1px solid #CA3D59;
 	top: 25%;
-	left: 25%;
+	left: 4%;
+	justify-content: center;
 	margin: 5%;
 	
 
@@ -214,8 +237,171 @@ table, th, td {
 }
 
 .logo{
-	width: 20%;
-	height: 80%;
+	width: 70%;
+	height: 100%;
 
 	
+}
+
+@media (min-width: 361px){
+
+.header {
+	position: absolute;
+	padding: 10px 1%;
+	margin: 10px 1% auto;
+	border: 4px solid;
+	width: 96%;
+	height: 7%;
+	background-color: #8D001C;
+
+}	
+.bloco1{
+	font-family: lato, sans-serif;
+	text-align: center;
+	padding-top: 5%;
+	top: 30%;
+	left: 35%;
+	display: block;
+	justify-content: unset;
+	position: unset;
+
+}
+	.bloco-list{
+	margin-top: 12%;
+	margin-bottom: 12%;
+	position: relative;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 50% 50% 50% 50%;
+	grid-row-gap: 2%;
+
+
+}
+
+
+.lista {
+	position: absolute;
+	left: 20%;
+	top: 30%;
+
+	
+}
+.navegacao{
+	font-family: "Work Sans", sans-serif;
+	font-size: 25px;
+	margin: 50px;
+	display: inline;
+	letter-spacing: 0.001rem;
+
+
+}
+
+.logo{
+	width: 20%;
+	height: 80%;
+	padding: 5px;
+
+	
+}
+.copyright{
+	font-family: Lato, sans-serif;
+	position: absolute;
+	line-height: 10px;
+	left: 47%;
+	top: 96%;
+
+}
+.area{
+	font-family: "Work Sans", sans-serif;
+	font-size: 220%;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	display: inline-block;
+	text-align: center;
+	padding: 3% 12% 3%;
+	color: #000000;
+	margin: 5%;
+
+}
+.areaprojects{
+	position: absolute;
+	font-size: 25px;
+	top: 40%;
+	left: 50%;
+}
+
+
+
+.nomeprojeto{
+	display: flex;
+	justify-content: center;
+	font-family: "Work Sans", sans-serif;
+	font-weight: bold;
+	font-size:1.7rem;
+	position: absolute;
+	top: 17%;
+	color: #CA3D59;
+	line-height: 1.4rem;
+
+}
+.tabela{
+	font-family: Lato, sans-serif;
+	font-size: 1.1rem;
+	position: fixed;
+	border: 1px solid #CA3D59;
+	top: 50%;
+	left: 50%;
+	transform: translate(-55%, -70%);
+	justify-content: center;
+	margin: 5%;
+}
+
+.divprojeto {
+	align-content: center;
+	
+}
+.espacotabela{
+	align-content: center;
+}
+
+.titulo{
+    font-size: 1.5rem;
+	font-family: "Work Sans", sans-serif;
+	position: absolute;
+	font-weight: bold;
+	color: white;
+    background-color: #8D001C;
+    top: 20%;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+}
+.projeto{
+	text-align: center;
+	padding-top: 1.8%;
+}
+
+.contatos {
+	font-family: Lato;
+	position: absolute;
+	text-align: center;
+   	top: 37%;
+    left: 47%;
+}
+
+.blococontatos{
+	position: absolute;
+	justify-content: center;
+	top: 45%;
+	left: 37%;
+}
+
+
+.listainfo {
+	font-family: Lato, sans-serif;	
+  	padding: 10px;
+    list-style-type: disc; 
+    list-style-position: inside;
+}
 }
