@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+	<script src="assets/lib/app.js"></script>
+    <script src="assets/lib/database.js"></script>
+    <script src="assets/lib/codes.js"></script>
+    <script src="assets/lib/handlebars.js"></script>
+    <script src="assets/script2.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato%7CWork+Sans" rel="stylesheet">
+	<link href = "assets/css/reset.css" rel=stylesheet>
+	<link href= "assets/css/style.css" rel=stylesheet>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content= "width=device-width, initial-scale=1">
+
+	<title> {{name}}</title>
+</head>
+<header class = "header">
+	<img class = "logo" src = "assets/img/logo.png" alt= "logo">
+	<nav class = "lista">
+		<ul>
+			<li class ="navegacao"><a class="link" href="index.html"> Home</a></li>
+			<li class ="navegacao"><a class="link" href="info.html"> Info</a></li>
+		</ul>
+	</nav>
+</header>
+<header class = "area">
+	{{name}}
+</header>
+<div class = "areaprojects">
+	<ul>
+		{{#each projetoslistados}}
+		<li class = listainfo><a class = "linkarea" href="projetoselecionado.html?categoria={{area}}&projeto={{nome}}">{{nome}}</a></li>
+		{{/each}}
+	</ul>
+</div>
+<div class = "copyright">₢ Grupo 6 - 2018</div>
+</html>
